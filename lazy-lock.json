@@ -1,9 +1,10 @@
 {
-  "lazy.nvim": { "branch": "main", "commit": "e42fccc3cda70266e0841c5126de2c23e8982800" },
-  "nvim-treesitter": { "branch": "master", "commit": "4199be485cd85662d8ff1dc8c4cc78d819fad6cd" },
+  "lazy.nvim": { "branch": "main", "commit": "16603c6917435d8446f7357cb61095138a417085" },
+  "nvim-treesitter": { "branch": "master", "commit": "bf0a96568a54618138ac42c84758945cdafef86b" },
   "plenary.nvim": { "branch": "master", "commit": "50012918b2fc8357b87cff2a7f7f0446e47da174" },
   "telescope.nvim": { "branch": "master", "commit": "7011eaae0ac1afe036e30c95cf80200b8dc3f21a" },
-  "tokyonight": { "branch": "main", "commit": "531b04704fc9ff994d8b9c0720428fdc3c7d49d1" },
+  "tokyonight": { "branch": "main", "commit": "f247ee700b569ed43f39320413a13ba9b0aef0db" },
   "ultisnips": { "branch": "master", "commit": "b393ba65386d47664421e1f8b246a87a6e8b218c" },
-  "vimtex": { "branch": "master", "commit": "e6264120d31d0b5e69d06041b52d40f9ec5ffec5" }
+  "vimtex": { "branch": "master", "commit": "b73f7c3272b75fc4c51fc04b7dd4f1665b259c03" },
+  "which-key.nvim": { "branch": "main", "commit": "4433e5ec9a507e5097571ed55c02ea9658fb268a" }
 }

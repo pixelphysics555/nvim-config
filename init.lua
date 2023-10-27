@@ -1,3 +1,11 @@
+-- Set options that need to run before lazy.nvim here:
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
+vim.opt.number = true
+vim.opt.relativenumber = true
+
+-- Start lazy.nvim:
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
 	vim.fn.system({
@@ -11,12 +19,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
-
-vim.opt.number = true
-vim.opt.relativenumber = true
-
+-- Tell lazy.nvim where to look for plugins:
 require("lazy").setup({
 	{ import = "plugins" },
 	{ import = "core" }

@@ -8,8 +8,8 @@ return {
 	},
 
 	--[[ Pull colors from here:
-	"folke/tokyonight.nvim", name = "tokyonight",
-	"Mofiqul/dracula.nvim", name = "dracula",
-	"ellisonleao/gruvbox.nvim", name = "gruvbox",
+		"folke/tokyonight.nvim", name = "tokyonight",
+		"Mofiqul/dracula.nvim", name = "dracula",
+		"ellisonleao/gruvbox.nvim", name = "gruvbox",
 	]]--
 }
