@@ -6,3 +6,6 @@ Features:
 * lazy.nvim
 * Ulitsnips
 * VimTeX
+* which-key
+* Telescope
+* Treesitter
