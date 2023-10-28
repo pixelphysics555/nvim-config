@@ -1,15 +1,19 @@
 return {
 	{
-		"folke/tokyonight.nvim", name = "tokyonight",
-		priority = 1000,
-		config = function()
-			vim.cmd([[ colorscheme tokyonight ]])
-		end
+		"folke/tokyonight.nvim",
+		name = "tokyonight",
+		lazy = false,
 	},
 
-	--[[ Pull colors from here:
-		"folke/tokyonight.nvim", name = "tokyonight",
-		"Mofiqul/dracula.nvim", name = "dracula",
-		"ellisonleao/gruvbox.nvim", name = "gruvbox",
-	]]--
+	{
+		"Mofiqul/dracula.nvim",
+		name = "dracula",
+		lazy = false,
+	},
+
+	{
+		"ellisonleao/gruvbox.nvim",
+		name = "gruvbox",
+		lazy = false,
+	},
 }

@@ -9,3 +9,4 @@ Features:
 * which-key
 * Telescope
 * Treesitter
+* lualine

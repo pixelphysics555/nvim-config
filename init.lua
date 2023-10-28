@@ -19,8 +19,10 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
--- Tell lazy.nvim where to look for plugins:
-require("lazy").setup({
+require("lazy").setup({          -- Tell lazy.nvim where to look for plugins:
+	{ import = "core" },
 	{ import = "plugins" },
-	{ import = "core" }
 })
+
+-- Plugin-dependent startup options:
+vim.cmd([[colorscheme tokyonight]])
