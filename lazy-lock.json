@@ -1,5 +1,4 @@
 {
-  "dashboard-nvim": { "branch": "master", "commit": "c71cab740e2add248c54c458b5ca9d6e77c30fa6" },
   "dracula": { "branch": "main", "commit": "7200e64c589f899d29f8963aad7543856d1c2545" },
   "gruvbox": { "branch": "main", "commit": "477c62493c82684ed510c4f70eaf83802e398898" },
   "lazy.nvim": { "branch": "main", "commit": "16603c6917435d8446f7357cb61095138a417085" },
@@ -10,6 +9,5 @@
   "telescope.nvim": { "branch": "master", "commit": "7011eaae0ac1afe036e30c95cf80200b8dc3f21a" },
   "tokyonight": { "branch": "main", "commit": "f247ee700b569ed43f39320413a13ba9b0aef0db" },
   "ultisnips": { "branch": "master", "commit": "b393ba65386d47664421e1f8b246a87a6e8b218c" },
-  "vimtex": { "branch": "master", "commit": "7785ecd75b9a71a22ac33a8250e3bf4eaca6b439" },
-  "which-key.nvim": { "branch": "main", "commit": "4433e5ec9a507e5097571ed55c02ea9658fb268a" }
+  "vimtex": { "branch": "master", "commit": "7785ecd75b9a71a22ac33a8250e3bf4eaca6b439" }
 }
