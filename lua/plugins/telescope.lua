@@ -1,13 +1,26 @@
 return {
-
-	"nvim-telescope/telescope.nvim", 
-	version = "0.1.4",
-	-- branch = "0.1.x",
-	dependencies = { "nvim-lua/plenary.nvim" },
-
-	keys = { 
-		{ "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find Files" },
-		{ "<leader>fw", "<cmd>Telescope grep_string<cr>", desc = "Find String" },
-		{ "<leader>fr", "<cmd>Telescope oldfiles<cr>", desc = "Recent Files" },
-	}
+  {
+    'nvim-telescope/telescope.nvim',
+    tag = '0.1.6',
+    dependencies = { 'nvim-lua/plenary.nvim' },
+    config = function()
+      local builtin = require("telescope.builtin")
+      vim.keymap.set('n', '<C-p>', builtin.find_files, {})
+      vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
+    end
+  },
+  {
+    "nvim-telescope/telescope-ui-select.nvim",
+    config = function()
+      require("telescope").setup({
+        extensions = {
+          ["ui-select"] = {
+            require("telescope.themes").get_dropdown {
+            }
+          }
+        }
+      })
+      require("telescope").load_extension("ui-select")
+    end
+  },
 }
