@@ -3,54 +3,48 @@ return {
     "williamboman/mason.nvim",
     config = function()
       require("mason").setup()
-    end
+    end,
   },
   {
     "williamboman/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = { "rnix", "bashls", "lua_ls", "clangd", "ltex", "markdown_oxide", "rust_analyzer", "pyright" }
+        ensure_installed = { "lua_ls", "rnix", "clangd", "markdown_oxide", "rust_analyzer", "pylsp" },
       })
-    end
+    end,
   },
   {
     "neovim/nvim-lspconfig",
     config = function()
-      local capabilities = require('cmp_nvim_lsp').default_capabilities()
+      local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
       local lspconfig = require("lspconfig")
       -- Allow neovim to communicate with language servers
       lspconfig.lua_ls.setup({
-        capabilities = capabilities
-      })
-      lspconfig.pyright.setup({
-        capabilities = capabilities
+        capabilities = capabilities,
       })
       lspconfig.rnix.setup({
-        capabilities = capabilities
-      })
-      lspconfig.bashls.setup({
-        capabilities = capabilities
+        capabilities = capabilities,
       })
       lspconfig.clangd.setup({
-        capabilities = capabilities
-      })
-      lspconfig.ltex.setup({
-        capabilities = capabilities
+        capabilities = capabilities,
       })
       lspconfig.markdown_oxide.setup({
-        capabilities = capabilities
+        capabilities = capabilities,
       })
       lspconfig.rust_analyzer.setup({
-        capabilities = capabilities
+        capabilities = capabilities,
       })
-      lspconfig.pyright.setup({
-        capabilities = capabilities
+      lspconfig.pylsp.setup({
+        capabilities = capabilities,
+      })
+      lspconfig.texlab.setup({
+        capabilities = capabilities,
       })
       -- Set keybindings for lspconfig
-      vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
-      vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
-      vim.keymap.set({ 'n', 'v' }, '<leader>ca', vim.lsp.buf.code_action, {})
-    end
-  }
+      vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
+      vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
+      vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
+    end,
+  },
 }
