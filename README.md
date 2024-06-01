@@ -1,17 +1,25 @@
 # slick-nvim
 
-Goal: Create a one-step-install neovim configuration that contains a handful of useful plugins that can be used in any UNIX operating system.
+## Goal: Create a one-step-install neovim configuration that contains a handful of useful plugins that can be used in any UNIX operating system.
 
-Features:
-* Lazy
+## Plugins:
 * Alpha Dashboard
+* Code Completion
+    - Nvim-cmp, Cmp-path, Cmp-nvim-lsp
+    - Luasnip, Cmp-luasnip
+* Conform
 * LuaSnip
 * LSP
+    - Mason
+    - Mason-lsp
+    - Fidget
+    - Neodev
 * Lualine
-* Mason
 * Neo-tree
-* None-ls
 * Telescope
-* Tokyonight Colorscheme
+* Colorscheme
+    - Tokyonight
+    - Gruvbox
+    - Dracula
 * Treesitter
 * VimTeX
